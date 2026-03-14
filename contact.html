@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - Tushar Malpani</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">Education</a>
+    <a href="projects.html">Projects</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <button id="theme-toggle">🌙</button>
+  </nav>
+</header>
+
+<section class="contact">
+  <h2>Get in Touch</h2>
+  <p>
+    Communication is something I value deeply. I believe that sharing ideas, asking questions, and collaborating 
+    with others are essential parts of learning and growth. Throughout my journey as a student and a young 
+    developer, I have realized that the best opportunities often come from connecting with people. Whether it is 
+    discussing a new project, exchanging knowledge about technology, or simply talking about school life, I enjoy 
+    building meaningful conversations. This section of my website is dedicated to making it easy for anyone to 
+    reach out to me. I have integrated a WhatsApp form so that messages can be sent directly and instantly, 
+    ensuring quick communication. I want to encourage classmates, teachers, and even people from outside my 
+    school to connect with me if they are interested in my work or want to collaborate. I believe that technology 
+    is not just about creating tools but also about building communities, and communication is the bridge that 
+    makes this possible. By staying open to conversations, I hope to learn from others, share my experiences, and 
+    grow together. If you have ideas, feedback, or even just want to say hello, please feel free to send me a 
+    message. I am always open to new connections and opportunities to learn.
+  </p>
+
+  <form onsubmit="sendWhatsAppMessage(); return false;">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <textarea id="message" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn">Send via WhatsApp</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Tushar Malpani</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
