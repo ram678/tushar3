@@ -26,6 +26,7 @@ header nav {
   align-items: center;
   padding: 1rem;
   background: var(--primary);
+  flex-wrap: wrap; /* allows wrapping on small screens */
 }
 
 nav a {
@@ -57,6 +58,7 @@ nav a:hover {
   text-decoration: none;
   border-radius: 5px;
   transition: 0.3s;
+  display: inline-block;
 }
 
 .btn:hover {
@@ -121,4 +123,38 @@ footer {
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 4rem 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+  nav a {
+    margin: 8px 0;
+  }
+  .hero {
+    padding: 3rem 1rem;
+  }
+  .project-card {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+  }
+  .btn {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+  }
 }
