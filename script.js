@@ -8,7 +8,7 @@ if (toggleBtn) {
 }
 
 // ⌨️ Typewriter Effect for Hero Section
-const typewriterText = ["Grade 8 Student", "Tech Explorer", "Website Creator"];
+const typewriterText = ["Grade 9 Student", "Tech Explorer"];
 let i = 0, j = 0, currentText = "", isDeleting = false;
 
 function typeWriter() {
